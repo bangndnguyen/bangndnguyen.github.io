@@ -1,6 +1,8 @@
 'use client';
 
-import { Box, Container, Typography, useTheme } from "@mui/material";
+import { Box, Button, Container, Typography, useTheme } from "@mui/material";
+import DescriptionIcon from '@mui/icons-material/Description';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function Home() {
   const theme = useTheme();
@@ -20,8 +22,25 @@ export default function Home() {
           Bang Nguyen
         </Typography>
         <Typography variant="subtitle1" color={theme.palette.getContrastText(theme.palette.background.paper)} marginTop={3}>
-          Hello! I&apos;m a Senior Web Developer based in Ho Chi Minh City, Vietnam. I&apos;m looking for an opportunity to work in Germany. Here is a showcase of what I can do. Hit me up if you&apos;re interested.
+          Hallo! I&apos;m a Senior Web Developer based in Ho Chi Minh City, Vietnam. I&apos;m looking for an opportunity to work in Germany.
         </Typography>
+        <Box sx={{
+          display: 'flex',
+          gap: 1,
+          paddingTop: 2
+        }}>
+          <Button variant="contained" color='primary' startIcon={<DescriptionIcon />}
+            href='https://drive.google.com/file/d/1Qrm7cB4HK5CIj1wdnNMZQj3_HVjqENgn/view'
+            target='_blank'
+          >
+            View my CV
+          </Button>
+          <Button variant="contained" color='primary' startIcon={<EmailIcon />}
+            href='mailto:bangndnguyen@gmail.com'
+          >
+            Email me
+          </Button>
+        </Box>
       </Container>
     </Container>
   );

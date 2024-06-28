@@ -14,7 +14,7 @@ export default function Home() {
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <Typography variant="h1" color={theme.palette.getContrastText(theme.palette.primary.dark)}>Hello! I'm Bang Nguyen,</Typography>
+        <Typography variant="h1" color={theme.palette.getContrastText(theme.palette.primary.dark)}>Hello! I&apos;m Bang Nguyen,</Typography>
         <Typography variant="h2" color={theme.palette.getContrastText(theme.palette.primary.dark)}>Web Developer</Typography>
       </Box>
     </Container>

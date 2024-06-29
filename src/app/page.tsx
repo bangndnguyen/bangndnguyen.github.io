@@ -26,7 +26,7 @@ export default function Home() {
           flex: '2',
         }}>
           <Typography variant="h3" color={theme.palette.getContrastText(theme.palette.background.paper)}>
-            Bang Nguyen
+            BANG NGUYEN
           </Typography>
           <Typography
             variant="subtitle1"
@@ -67,7 +67,7 @@ export default function Home() {
             />
             <CardContent>
               <Typography variant="body2" color="text.secondary">
-                A simple CRUD app that lets users post content.
+                A social network where pets are superstars.
               </Typography>
               <Box sx={{ display: 'flex', gap: 0.5, paddingTop: 1 }}>
               <Chip variant="outlined" label='React' />

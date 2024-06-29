@@ -55,7 +55,7 @@ export default function Home() {
           </Box>
         </Box>
         <Box sx={{ flex: 1 }}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 400 }}>
             <CardHeader
               title="Petbook"
             />

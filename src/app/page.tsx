@@ -69,18 +69,19 @@ export default function Home() {
               <Typography variant="body2" color="text.secondary">
                 A social network where pets are superstars.
               </Typography>
-              <Box sx={{ display: 'flex', gap: 0.5, paddingTop: 1 }}>
-              <Chip variant="outlined" label='React' />
-              <Chip variant="outlined" label='NextJS' />
-              <Chip variant="outlined" label='Postgres' />
-              <Chip variant="outlined" label='REST APIs' />
+              <Box sx={{ display: 'flex', gap: 0.5, paddingTop: 1, flexWrap: 'wrap' }}>
+                <Chip variant="outlined" label='React' />
+                <Chip variant="outlined" label='NextJS' />
+                <Chip variant="outlined" label='MaterialUI' />
+                <Chip variant="outlined" label='Postgres' />
+                <Chip variant="outlined" label='REST APIs' />
               </Box>
             </CardContent>
             <CardActions disableSpacing>
-              <Button startIcon={<GitHubIcon />} href='https://github.com/basdnguyen/petbook'>
+              <Button startIcon={<GitHubIcon />} href='https://github.com/basdnguyen/petbook' target='_blank'>
                 Github
               </Button>
-              <Button startIcon={<LaunchIcon />} href='https://petbook-ten.vercel.app/'>
+              <Button startIcon={<LaunchIcon />} href='https://petbook.bangnguyen.me/' target='_blank'>
                 Demo
               </Button>
             </CardActions>

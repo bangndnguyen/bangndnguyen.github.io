@@ -1,30 +1,19 @@
 'use client';
 
-import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Chip, Collapse, Container, IconButton, Paper, Typography, useTheme } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Chip, Container, Typography, useTheme } from "@mui/material";
 import DescriptionIcon from '@mui/icons-material/Description';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Grid from "@mui/material/Unstable_Grid2";
 
 export default function Home() {
   const theme = useTheme();
   return (
-    <Paper>
-      <Container maxWidth='md' sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 6
-      }}>
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'end',
-          flex: '2',
-        }}>
+    <Container maxWidth='md'>
+      <Grid container minHeight={'100vh'} alignItems={'center'}
+        columnSpacing={{ sm: 6 }} rowSpacing={{ xs: 6, sm: 0 }} paddingY={6}>
+        <Grid sm={6} justifyContent={{ xs: 'start', sm: 'end' }} alignContent={'center'} container>
           <Typography variant="h3" color={theme.palette.getContrastText(theme.palette.background.paper)}>
             BANG NGUYEN
           </Typography>
@@ -32,7 +21,7 @@ export default function Home() {
             variant="subtitle1"
             color={theme.palette.getContrastText(theme.palette.background.paper)}
             marginTop={3}
-            textAlign={'right'}
+            textAlign={{ xs: 'left', sm: 'right' }}
           >
             Hallo! I&apos;m a Senior Web Developer based in Ho Chi Minh City, Vietnam. I&apos;m looking for an opportunity to work in Germany.
           </Typography>
@@ -53,8 +42,8 @@ export default function Home() {
               Email me
             </Button>
           </Box>
-        </Box>
-        <Box sx={{ flex: 1 }}>
+        </Grid>
+        <Grid sm={6} alignContent={'center'} paddingTop={{ xs: 6, sm: 0 }}>
           <Card sx={{ maxWidth: 400 }}>
             <CardHeader
               title="Petbook"
@@ -86,8 +75,8 @@ export default function Home() {
               </Button>
             </CardActions>
           </Card>
-        </Box>
-      </Container>
-    </Paper>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }

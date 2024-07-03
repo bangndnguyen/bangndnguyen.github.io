@@ -34,7 +34,7 @@ export default function Home() {
             paddingTop: 2
           }}>
             <Button variant="contained" color='primary' startIcon={<DescriptionIcon />}
-              href='https://drive.google.com/file/d/1xbf69ScwecCDGH-vIJrTlxkSNjWwV9zk/view'
+              href='https://docs.google.com/document/d/1GgLgZSVlOrW1InuWcokmng9qh6huMz-Jsb0wAAsbcjc/edit'
               target='_blank'
             >
               View my CV

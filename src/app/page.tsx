@@ -72,6 +72,7 @@ export default function Home() {
                   <Chip variant="outlined" label='NextJS' />
                   <Chip variant="outlined" label='MaterialUI' />
                   <Chip variant="outlined" label='Postgres' />
+                  <Chip variant="outlined" label='Prisma' />
                   <Chip variant="outlined" label='REST APIs' />
                 </Box>
               </CardContent>

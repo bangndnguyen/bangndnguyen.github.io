@@ -26,7 +26,7 @@ export default function Home() {
             marginTop={3}
             textAlign={{ xs: 'left', sm: 'right' }}
           >
-            Hallo! I&apos;m a Senior Web Developer based in Ho Chi Minh City, Vietnam. I&apos;m looking for an opportunity to work in Germany.
+            Hi! I&apos;m a Web Developer based in Ho Chi Minh City, Vietnam.
           </Typography>
           <Box sx={{
             display: 'flex',
